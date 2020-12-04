@@ -1,0 +1,196 @@
+body {
+  background-color: #566246;
+}
+.header {
+  background-color: #f1f2eb;
+  text-align: center;
+  color: rgb(170, 167, 167);
+  overflow: hidden;
+}
+.container {
+  margin-top: 25px;
+}
+.header h1 {
+  margin: 5px;
+  padding: 5px;
+}
+.App {
+  width: 90%;
+  text-align: center;
+  padding: 30px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: #d8dad3;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  background-color: #a4c2a5;
+  padding: 10px 13px;
+  margin: 15px 0 0 0;
+  color: white;
+}
+.weather-card {
+  background-color: #fff;
+  padding: 30px;
+  width: 300px;
+  margin: 0 auto;
+}
+.city-info {
+  float: right;
+  color: rgb(90, 86, 86);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.icon {
+  width: 140px;
+  margin: 0 auto;
+  float: none;
+}
+
+.icon img {
+  width: 100%;
+}
+h5 {
+  text-align: center;
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  color: rgb(90, 86, 86);
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.temp {
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+}
+.small-temp {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+}
+.card-footer {
+  margin: 12px auto 0 auto;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(90, 86, 86);
+  font-weight: 600;
+}
+.card-footer span {
+  margin-right: 8px;
+}
+
+/*loading bar*/
+.lds-roller {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-200%, 500%);
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  border: 1px solid;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  width: 300px;
+  margin: 40px auto;
+}
+.error {
+  color: #d8000c;
+  background-color: #ffbaba;
+  background-image: url("https://i.imgur.com/GnyDvKN.png");
+}
